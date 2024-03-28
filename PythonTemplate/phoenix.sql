@@ -6,7 +6,7 @@ CREATE VIEW IF NOT EXISTS "powers" (pk VARCHAR PRIMARY KEY,
                       "personal"."power" VARCHAR, 
                       "personal"."hero" VARCHAR);
 
-SELECT p."name" AS Name1, p2."name" AS Name2, p."power" AS Power
+SELECT p."name" AS "Name1", p2."name" AS "Name2", p."power" AS "Power"
 FROM "powers" AS p
 JOIN "powers" AS p2
 ON p."power" = p2."power"
